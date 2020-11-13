@@ -1,0 +1,113 @@
+body {
+  background: #000;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+#container {
+  width: 98vw;
+  height: 90vh;
+  background: linear-gradient(
+      180deg,
+      rgba(5, 134, 167, 0.63),
+      rgba(1, 13, 27, 0.651)
+    ),
+    url(../img/bkg.jpg);
+  background-size: cover;
+  background-position: bottom;
+  margin: 20px auto;
+}
+
+#calculator {
+  width: 320px;
+  height: 540px;
+  background: #eaedefa6;
+  margin: 0 auto;
+  top: 20px;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#result {
+  height: 120px;
+}
+
+#keybooard {
+  height: 400px;
+}
+
+#history {
+  text-align: right;
+  height: 20px;
+  margin: 0 20px;
+  padding-top: 20px;
+  font-size: 15px;
+  color: #919191;
+}
+
+#output {
+  text-align: right;
+  height: 60px;
+  margin: 10px 20px;
+  font-size: 30px;
+}
+
+.operator,
+.number,
+.empty {
+  width: 50px;
+  height: 50px;
+  margin: 15px;
+  float: left;
+  border-radius: 50%;
+  border-width: 0;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.empty,
+.number {
+  background: none;
+}
+
+.number,
+.operator {
+  cursor: pointer;
+}
+
+.number:active,
+.operator:active {
+  font-size: 13px;
+}
+
+.number:focus,
+.operator:focus,
+.empty:focus {
+  outline: 0;
+}
+
+button:nth-child(4) {
+  font-size: 20px;
+  background-color: rgb(212, 34, 212);
+}
+
+button:nth-child(8) {
+  font-size: 20px;
+  background-color: rgb(76, 214, 21);
+}
+
+button:nth-child(12) {
+  font-size: 20px;
+  background-color: rgb(255, 210, 7);
+}
+
+button:nth-child(16) {
+  font-size: 20px;
+  background-color: rgb(18, 230, 230);
+}
+
+button:nth-child(20) {
+  font-size: 20px;
+  background-color: rgb(230, 103, 18);
+}
